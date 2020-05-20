@@ -30,9 +30,8 @@ def merge_sort(arr):
     # Your code here
     if len(arr) > 1:
         left = merge_sort(arr[:len(arr) // 2])
-        right = merge_sort(arr[len(arr) //2:])
+        right = merge_sort(arr[len(arr) // 2:])
         arr = merge(left, right)
-
 
     return arr
 
@@ -57,7 +56,7 @@ def merge_in_place(arr, start, mid, end):
             start2 += 1
 
 
-    return arr
+    # return arr
 
 
 def merge_sort_in_place(arr, l, r):
@@ -69,7 +68,7 @@ def merge_sort_in_place(arr, l, r):
         merge_in_place(arr, l, m, r)
 
 
-    # return arr
+    return arr
 
 
 # STRETCH: implement the Timsort function below
